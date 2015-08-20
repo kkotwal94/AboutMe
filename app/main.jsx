@@ -9,6 +9,7 @@ main();
 function main() {
 	let app = document.createElement('div');
 	app.id = "node";
+	//document.body.style.backgroundColor = "#ededed";
 	document.body.appendChild(app);
 	Router.run(routes, Router.HistoryLocation, function (Handler) {
     React.render(<Handler/>, app);

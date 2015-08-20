@@ -7,8 +7,8 @@ A webpage about me and my projects!!!
 * SideBar
 * Dialog/Modal
 * List
+* About me
+* Dota2
 
 #ToDo
-* AboutMyself part
-* Dota2DankMemes
 * Secret

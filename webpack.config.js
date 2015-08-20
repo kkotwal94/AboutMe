@@ -33,7 +33,7 @@ if (TARGET === 'build') {
                 },
                 {
                     test: /\.jsx?$/,
-                    loader: 'babel?stage=1',
+                    loader: 'babel?stage=0',
                     include: path.resolve(ROOT_PATH, 'app')
                 }
             ]
