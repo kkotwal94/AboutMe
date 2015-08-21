@@ -25,17 +25,19 @@ constructor(props) {
   sourceRedirect =() =>{
   	window.location.href = "https://github.com/kkotwal94/IsoReportProcessor";
   }
-
+  isoSite = () => {
+    window.location.href ="http://isoreports.kkotwal.me/"
+  }
   lazysource = () => {
   	window.location.href ="https://github.com/kkotwal94/TooLazyTo";
   }
 
   lazysite = () => {
-  	window.location.href ="http://ec2-54-187-2-191.us-west-2.compute.amazonaws.com:3000/";
+  	window.location.href ="http://toolazy.kkotwal.me/";
   }
 
   parkingsite = () => {
-  	window.location.href ="https://github.com/kkotwal94/ParkingLotProj";
+  	window.location.href ="http://parking.kkotwal.me/";
   }
 
   parkingsource = () => {
@@ -43,7 +45,7 @@ constructor(props) {
   }
 
   karedditsite = () => {
-   window.location.href ="http://ec2-54-187-2-191.us-west-2.compute.amazonaws.com:8080/";
+   window.location.href ="http://kareddit.kkotwal.me/";
   }
 
   karedditsource = () => {
@@ -51,7 +53,7 @@ constructor(props) {
   }
 
   chatsite = () => {
-  	window.location.href = "http://ec2-52-11-78-16.us-west-2.compute.amazonaws.com/";
+  	window.location.href = "http://chat.kkotwal.me/";
   }
 
   chatsource = () => {
@@ -88,7 +90,7 @@ constructor(props) {
             <CardTitle title="Report Processor" subtitle="Try it out" expandable={true}/>
             <CardActions expandable={true}>
               <FlatButton label="View Source" onClick ={this.sourceRedirect}/>
-              <FlatButton label="View Demo"/>
+              <FlatButton label="View Demo" onClick ={this.isoSite}/>
             </CardActions>
             <CardText expandable={true}>
               My latest project which was done at my Internship at A. Duie Pyle. It involved me learning Flux, webpack, SCSS, Isojs, and react-router. Using all these tools along with ReactJS/Mongo/Node I was able to produce a Web App that can create reports, join reports, delete reports, edit reports, and add SubReports (creating a tree like data-structure). Most importantly it was made so a Manager can select his employees, and add them under his jurisdiction, and then assign them reports. While doing all this, all Users who belong to the manager/boss can only see Documents they were assigned or are involved in.

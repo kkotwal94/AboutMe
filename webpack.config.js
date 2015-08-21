@@ -4,9 +4,9 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var webpack = require('webpack');
 var merge = require('webpack-merge');
 
-var TARGET = process.env.TARGET;
+var TARGET = process.env.npm_lifecycle_event;
 var ROOT_PATH = path.resolve(__dirname);
-
+console.log(TARGET);
 var common = {
     entry: [path.resolve(ROOT_PATH, 'app/main')],
     resolve: {
@@ -55,7 +55,7 @@ if (TARGET === 'build') {
     });
 }
 
-if (TARGET === 'dev') {
+if (TARGET === 'start') {
     module.exports = merge(common, {
         module: {
             loaders: [

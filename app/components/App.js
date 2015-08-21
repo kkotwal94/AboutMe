@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './NavBar';
+import Navbar from './Navbar';
 import {RouteHandler} from 'react-router';
 let injectTapEventPlugin = require("react-tap-event-plugin");
 let mui = require('material-ui');

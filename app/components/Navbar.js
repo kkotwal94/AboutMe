@@ -134,7 +134,7 @@ constructor(props, context) {
   
   onDropDownChange = (event, key, payload) =>{
      if(payload.text=='Resume') {
-     	window.location.href = "/resume.pdf";
+     	//window.location.href = "/resume.pdf";
      }
      if(payload.text=='Contact Info') {
      	this.refs.customDialog.show();

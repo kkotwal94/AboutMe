@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "SET TARGET=build&& webpack",
-    "start": "SET TARGET=dev&& webpack-dev-server --devtool eval --progress --colors --hot --inline --history-api-fallback --content-base build"
+    "build": "webpack",
+    "start": "webpack-dev-server --devtool eval --progress --colors --hot --inline --history-api-fallback --content-base build"
   },
   "author": "Karan Kotwal",
   "license": "ISC",
